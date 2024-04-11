@@ -1,6 +1,2 @@
 print("header")
-print("frommain")
-print("new")
-print("main")
-print("vs")
-print("p")
+
