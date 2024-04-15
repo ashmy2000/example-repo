@@ -1,23 +1,28 @@
 import own_modules
-import math
 
 
 def halve_string(input_string):
-    half_length = len(input_string) // 2
-    print("Full String is:", input_string, ".", "Half the length is:", half_length)
-    if len(input_string) % 2 == 0:
-        print("even")
-        first_half = input_string[:half_length]
-        second_half = input_string[half_length:]
-        print(first_half, second_half)
-    elif len(input_string) % 2 != 0:
-        print("odd")
-        first_half = input_string[:half_length + 1]
-        second_half = input_string[half_length + 1:]
-        print(first_half, second_half)
+    length = len(input_string)
+    half_length = length // 2
+    if length % 2 == 0:
+        return (input_string[:half_length], input_string[half_length:])
     else:
-        print("error")
+        return (input_string[:half_length + 1], input_string[half_length + 1:])
+
+def halve_strings(string_list):
+    return [halve_string(string) for string in string_list]
 
 
-# Assuming you want to call the function with the string from the module
-halve_string(own_modules.input_string)
+# Examples
+print(halve_string(own_modules.input_string))
+
+# Examples
+print(halve_strings(['Mark', 'Lydia']))
+
+quotes = ['Being happy never goes out of style.',
+          'Life is either a great adventure or nothing.',
+          'All you need in this life is ignorance and confidence; then success is sure.',
+          'All your life, you will be faced with a choice. You can choose love or hate... I choose love.',
+          'The time is always right to do what is right.']
+
+print(halve_strings(quotes))
