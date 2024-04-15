@@ -36,6 +36,6 @@ print(math.factorial(8))
 print(math.sqrt(64))
 print(math.sqrt(100))
 
-# hypot() -> Longest side in triangle FLOAT
+# hypot () -> Longest side in triangle FLOAT added more comments
 print(math.hypot(64,63))
 print(math.hypot(4,6))

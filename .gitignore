@@ -1,1 +1,11 @@
 .idea/
+
+
+
+
+
+
+# If not removing then use:
+# git rm -r --cached .idea
+# git commit -m "Remove .idea folder from version control"
+# git push origin <branch-name>
