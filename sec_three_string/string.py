@@ -31,7 +31,7 @@ print(name.isalpha())
 print(name.isdigit())
 print(name.islower())
 print(name.isupper())
-print(name.isspace())
+print(name.isspace()) 
 
 " ".join(["As", "hm", "y"])
 # sorted() -> creates a sorted copy
