@@ -11,10 +11,10 @@ class House():
         self.quality = "Medium"
         # Local variable
         quality = "High"
-
-soho_house = House("Wolvo", 52, 300000)
-print(soho_house.quality)
-print(House.quality)
-# Can't access Local variable
-soho_house.quality = "new"
-print(soho_house.quality)
+if __name__ == '__main__':
+    soho_house = House("Wolvo", 52, 300000)
+    print(soho_house.quality)
+    print(House.quality)
+    # Can't access Local variable
+    soho_house.quality = "new"
+    print(soho_house.quality)

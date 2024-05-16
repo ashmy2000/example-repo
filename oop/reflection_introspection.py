@@ -14,9 +14,9 @@ def empty_string(user_object):
         if isinstance(prop_value, str):
             setattr(user_object, prop_name, '')
 
-
-new_Dog2 = Dog("Tommy", 7)
-print(new_Dog2.introduce())
-empty_string(new_Dog2)
-print(new_Dog2.introduce())
-# new thing
+if __name__ == '__main__':
+    new_Dog2 = Dog("Tommy", 7)
+    print(new_Dog2.introduce())
+    empty_string(new_Dog2)
+    print(new_Dog2.introduce())
+    # new thing

@@ -22,11 +22,12 @@ class Car():
         print(f"current speed: {self.__speed}")
 
 
-my_car = Car('Tesla', 'white', 10)
-my_car.show_speed()
-my_car.speed_down()
-my_car.show_speed()
-my_car.speed_down()
-my_car.show_speed()
-my_car.speed = 50 # doesn't work
-my_car.show_speed()
+if __name__ == '__main__':
+    my_car = Car('Tesla', 'white', 10)
+    my_car.show_speed()
+    my_car.speed_down()
+    my_car.show_speed()
+    my_car.speed_down()
+    my_car.show_speed()
+    my_car.speed = 50  # doesn't work
+    my_car.show_speed()

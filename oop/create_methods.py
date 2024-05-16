@@ -10,6 +10,8 @@ class User2:
     def introduce(self):
         print(f"Hello I am, {self.nickname} and I live in {self.city}")
 
-sample_user = User2("name", "city")
-sample_user.introduce()
-print(sample_user.city)
+
+if __name__ == '__main__':
+    sample_user = User2("name", "city")
+    sample_user.introduce()
+    print(sample_user.city)

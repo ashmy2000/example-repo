@@ -1,4 +1,6 @@
 import random
+
+
 # if you have a Python file named game.py and both the Card and Deck classes are defined within this file,
 # they are in the same module. You can then reference the Card class directly from the Deck class as Card(suit, value)
 class Card:
@@ -8,6 +10,7 @@ class Card:
 
     def present(self):
         return f"{self.value} of {self.suit}"
+
 
 class Deck:
     def __init__(self):
@@ -35,13 +38,14 @@ class Deck:
     def get_remaining(self):
         return [x.present() for x in self.cards]
 
-# Example usage:
-deck = Deck()
-print(deck.get_remaining())    # Output: List of all 52 cards
-deck.shuffle()
-print(deck.get_remaining())    # Output: List of all 52 cards
-print(deck.count_remaining())  # Output: 52
-print(deck.get_remaining())    # Output: List of all 52 cards
-print(deck.deal().present())   # Output: A random card present() value
-print(deck.count_remaining())  # Output: 51, one card has been dealt
 
+if __name__ == '__main__':
+    # Example usage:
+    deck = Deck()
+    print(deck.get_remaining())  # Output: List of all 52 cards
+    deck.shuffle()
+    print(deck.get_remaining())  # Output: List of all 52 cards
+    print(deck.count_remaining())  # Output: 52
+    print(deck.get_remaining())  # Output: List of all 52 cards
+    print(deck.deal().present())  # Output: A random card present() value
+    print(deck.count_remaining())  # Output: 51, one card has been dealt
