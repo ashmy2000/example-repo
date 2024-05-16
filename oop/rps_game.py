@@ -35,6 +35,7 @@ class Rock_Paper_Scissors_Game:
                 print("You Win!")
             else:
                 print("You Lose!")
+                print("You Lose!")
 
 if __name__ == '__main__':
     new_game = Rock_Paper_Scissors_Game()
