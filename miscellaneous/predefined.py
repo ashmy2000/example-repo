@@ -5,3 +5,7 @@ for line in sys.stdin:
         break
     print(line)
 print("you pressed q so break")
+
+
+# stdout
+sys.stdout.write("hello")
