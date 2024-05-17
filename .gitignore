@@ -1,4 +1,5 @@
 .DS_Store
-eval "$(ssh-agent -s)"
-eval "$(ssh-agent -s)".pub
+\$\(ssh-agent -s\)
+eval\ \$\(ssh-agent\ -s\).pub
+
 
